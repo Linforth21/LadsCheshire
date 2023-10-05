@@ -99,7 +99,7 @@ button {
     padding: 1rem;
     aspect-ratio: 1/1;
     font-size: 2rem;
-    background-color: rgb(61, 61, 61);
+    background-color: grey;
 ;
   }
   
@@ -118,6 +118,8 @@ button {
     width:1px;
     height:1px;
     overflow:hidden;
+    /* fixes issue with hidden text contrast */
+    color: white;
     }
 
   .menu {
