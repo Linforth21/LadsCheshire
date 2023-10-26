@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LadsCheshire</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="menu">
+    <header>
+      <a href="#main" class="skip">Skip to main content</a>
+      <div class="headerWrapper">
+        <div class='h1'>LADS CHESHIRE</div>
+        <button id="nav-expand-button">
+          <span class="sr-only">Menu</span>
+          <svg role='img' id="menuIcon" aria-hidden='true' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+            aria-roledescription="Menu Icon">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g data-name="Layer 2">
+                <g data-name="menu">
+                  <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                  <rect x="3" y="11" width="18" height="2" rx=".95" ry=".95"></rect>
+                  <rect x="3" y="16" width="18" height="2" rx=".95" ry=".95"></rect>
+                  <rect x="3" y="6" width="18" height="2" rx=".95" ry=".95"></rect>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button>
+      </div>
+      <nav id="mainNav" aria-roledescription="Main Navigation" aria-expanded="false">
+        <ul>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Customers images</a></li>
+          <li><a href="#">Contact details</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <p class="established">Lini's Automotive Detailing Services Cheshire</p>
+      <hr>
+
+      <h1>Our Products and Services</h1>
+
+      <section aria-label='Available Packages'>
+        <h2>Packages</h2>
+        <p>Package prices from</p>
+        <article class="item">
+          <h3 class="package">Platinum</h3>
+          <h3 class="price">£200</h3>
+        </article>
+        <article class="item">
+          <h3 class="package">Gold</h3>
+          <h3 class="price">£150</h3>
+        </article>
+        <article class="item">
+          <h3 class="package">Silver</h3>
+          <h3 class="price">£100</h3>
+        </article>
+        <article class="item">
+          <h3 class="package">Bronze</h3>
+          <h3 class="price">£80</h3>
+        </article>
+        <article class="item">
+          <h3 class="package">Maintenance<a href="#details">*</a></h3>
+          <h3 class="price">£60</h3>
+        </article>
+        <p class='maintenance' id="details">
+          * Maintenance package for returning customers only that have previously had a Bronze or above
+          package applied to the vehicle.
+        </p>
+      </section>
+
+      <section aria-label='Services'>
+        <h2>Services</h2>
+        <p>Services prices from</p>
+        <article class="item">
+          <h3 class="services">Basic Outside only</h3>
+          <h3 class="price">£20</h3>
+        </article>
+        <article class="item">
+          <h3 class="services">Basic Inside only</h3>
+          <h3 class="price">£20</h3>
+        </article>
+        <article class="item">
+          <h3 class="services">Pet hair removal</h3>
+          <h3 class="price">£10</h3>
+        </article>
+        <article class="item">
+          <h3 class="services">Head light restore</h3>
+          <h3 class="price">£25</h3>
+        </article>
+      </section>
+      <hr>
+      <section aria-label="Contact Us">
+        <h2>Contact Us</h2>
+        <form action="/action_page.php" target="_blank">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" aria-label='First name' placeholder="John" required>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" aria-label='Last name' placeholder="Smith" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" aria-label="Your email address" placeholder="JohnSmith@icloud.com"
+            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$">
+          <label for="contactnum"> Contact Number:</label>
+          <input type='tel' id='contactnum' name='contactnum' aria-label='Your contact number' placeholder="07123456789"
+            required pattern='[0-9]{11}'>
+          <label for="make"> Make:</label>
+          <input type="text" id="make" name="make" aria-label='Make of Vehicle' placeholder="Honda" required>
+          <label for="model"> Model:</label>
+          <input type="text" id="model" name="model" aria-label='Model of Vehicle' placeholder="Civic Type-R" required>
+          <label for="age"> Year:</label>
+          <input type="text" id="age" name="age" aria-label='Age of Vehicle' placeholder="2011" required>
+          <fieldset>
+            <legend>What condition whould you say your vehicle is in?</legend>
+            <label><input id="New" type="radio" name="condition" value="new" checked> New</label>
+            <label><input id="LikeNew" type="radio" name="condition" value="like new"> Like New</label>
+            <label><input id="Used" type="radio" name="condition" value="Used"> Used</label>
+            <label><input id="WellUsed" type="radio" name="condition" value="Well Used"> Well Used</label>
+            <label><input id="Trashed" type="radio" name="condition" value="Trashed"> Wife has been using it
+              (Terrible)</label>
+          </fieldset>
+          <fieldset class='radio-fieldset'>
+            <legend> What packages or services would you like more infomation about?</legend>
+            <input type="checkbox" id="platinum" name="Package-service" value="platinum">
+            <label for="platinum">Platinum</label>
+            <input type="checkbox" id="gold" name="Package-service" value="gold">
+            <label for="gold">Gold</label>
+            <input type="checkbox" id="Silver" name="Package-service" value="Silver">
+            <label for="Silver">Silver</label>
+            <input type="checkbox" id="bronze" name="Package-service" value="bronze">
+            <label for="bronze">Bronze</label>
+            <input type="checkbox" id="maintenance" name="Package-service" value="maintenance">
+            <label for="maintenance">Maintenance</label>
+          </fieldset>
+
+          <textarea name="message" aria-label='text area'
+            placeholder='Any extra information you would like to tell us?'></textarea>
+
+          <fieldset class='radio-fieldset'>
+            <legend> How would you like us to contact you?</legend>
+            <input type="checkbox" id="Email" name="Email-Number" value="Email">
+            <label for="Email">Email</label>
+            <input type="checkbox" id="Call" name="Email-Number" value="Call">
+            <label for="Call">Phone call</label>
+            <input type="checkbox" id="Text" name="Email-Number" value="Text">
+            <label for="Text">Text message</label>
+          </fieldset>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <hr class="bottom-line">
+    <footer>
+      <p>
+        <a href="https://www.facebook.com/LadsCheshire" aria-label='Visit the Lads Cheshire Facebook page'
+          target="_blank">Visit our Facebook page</a>
+
+        <a aria-label="Contact us email address" href="mailto:chris@ladscheshire.co.uk">E-mail us</a>
+      </p>
+      <p class="address">Cheshire and surrounding areas</p>
+    </footer>
+  </div>
+  <script src="navbarExpand.js" defer></script>
+</body>
+
+</html>
